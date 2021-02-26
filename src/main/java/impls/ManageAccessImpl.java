@@ -69,7 +69,7 @@ public class ManageAccessImpl {
         if (!exists) {
             CucumberLogUtils.logPass("The user does not exist as expected", true);
         } else {
-            CucumberLogUtils.logFail("The user exists", true);
+            CucumberLogUtils.logFail("The user exists", false);
         }
     }
 

@@ -1,5 +1,6 @@
 Feature: Dashboards
-  @test
+
+
   Scenario: Adding new dashboard
     Given I navigate to Interview Prep
     Then I should see the "Login" page
@@ -46,9 +47,9 @@ Feature: Dashboards
     Then I click "<buttons>" button
     Then I enter "message text1" in the "Your Input..." input box
     Then I click "Enter" button
-    And I validate "message text" is displayed in "<sections>" window
-#    Then I click "Delete" button
-#    And I validate "message text" is  Not displayed in "<sections>" window
+    And I validate "message text1" is displayed in "<sections>" window
+    Then I click "Trash" icon button on "message text1" in "<sections>" window
+    And I validate "message text1" is  Not displayed in "<sections>" window
     Examples:
       | sections | buttons   |
       | Do's     | Add do    |

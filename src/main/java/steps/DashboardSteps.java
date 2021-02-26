@@ -34,6 +34,19 @@ public class DashboardSteps {
     @And("I validate {string} is displayed in {string} window")
     public void iValidateIsDisplayedInWindow(String message, String nameWindows) {
         DashboardImpl impl = new DashboardImpl();
-        impl.validMessageWind(message, nameWindows);
+        impl.messageIsDisplayed(message, nameWindows);
     }
+
+    @Then("I click {string} icon button on {string} in {string} window")
+    public void iClickIconButtonOnInWindow(String inconName, String message, String nameWindow) {
+        DashboardImpl impl = new DashboardImpl();
+        impl.clickIcon(inconName, message, nameWindow);
+    }
+
+    @And("I validate {string} is  Not displayed in {string} window")
+    public void iValidateIsNotDisplayedInWindow(String message, String nameWindows) {
+        DashboardImpl impl = new DashboardImpl();
+        impl.messageIsNotDisplayed(message, nameWindows);
+    }
+
 }
