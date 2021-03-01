@@ -7,14 +7,14 @@
 #  @test1
 #  Scenario: Login as test user
 #    Then I enter "test@yahoo.com" in the Email input box
-#    And I enter "testuser123" in the Password input box
+#    And I enter "testUserPassword" in the Password input box
 #    And I click "Login" button
 #    Then I validate I am on "Interview prep home" page
 #
 #  @test2
 #  Scenario: Login as admin user
 #    Then I enter "admin@yahoo.com" in the Email input box
-#    And I enter "adminuser123" in the Password input box
+#    And I enter "adminUserPassword" in the Password input box
 #    And I click "Login" button
 #    Then I validate I am on "Interview prep home" page
 #
@@ -61,8 +61,8 @@
 #
 #    Examples:
 #      | user       | email                | password          |
-#      | test       | test@yahoo.com       | testuser123       |
-#      | admin      | admin@yahoo.com      | adminuser123      |
+#      | test       | test@yahoo.com       | testUserPassword       |
+#      | admin      | admin@yahoo.com      | adminUserPassword      |
 #      | manager    | manager@yahoo.com    | manageruser123    |
 #      | Instructor | instructor@yahoo.com | instructoruser123 |
 #      | mentor     | mentor@yahoo.com     | mentoruser123     |
@@ -100,7 +100,7 @@
 ##    Given I navigate to Interview Prep
 ##    Then I should see the login page
 ##    Then I enter "test@yahoo.com" in the Email input box
-##    And I enter "testuser123" in the Password input box
+##    And I enter "testUserPassword" in the Password input box
 ##    And I click "Login" button
 ##    Then I validate the following incons on the dashboard
 ##      | All topics  |
@@ -122,7 +122,7 @@
 #    Given I navigate to Interview Prep
 #    Then I should see the login page
 #    Then I enter "test@yahoo.com" in the Email input box
-#    And I enter "testuser123" in the Password input box
+#    And I enter "testUserPassword" in the Password input box
 #    And I click "Login" button
 #    Then I validate I am on "Interview Prep home" page
 #    Then I click on "<allDash>" dash board
@@ -143,7 +143,7 @@
 #    Given I navigate to Interview Prep
 #    Then I should see the login page
 #    Then I enter "test@yahoo.com" in the Email input box
-#    And I enter "testuser123" in the Password input box
+#    And I enter "testUserPassword" in the Password input box
 #    And I click "Login" button
 #    Then I validate I am on "Interview Prep home" page
 #    Then I click "<icon>"
@@ -168,7 +168,7 @@
 #    Given I navigate to Interview Prep
 #    Then I should see the login page
 #    Then I enter "admin@yahoo.com" in the Email input box
-#    And I enter "adminuser123" in the Password input box
+#    And I enter "adminUserPassword" in the Password input box
 #    And I click "Login" button
 #    Then I validate I am on "Interview prep home" page
 #    And I click "Manage Access" button
@@ -204,7 +204,7 @@
 #    Given I navigate to Interview Prep
 #    Then I should see the login page
 #    Then I enter "admin@yahoo.com" in the Email input box
-#    And I enter "adminuser123" in the Password input box
+#    And I enter "adminUserPassword" in the Password input box
 #    And I click "Login" button
 #    Then I validate I am on "Interview prep home" page
 #    And I click "Manage Access" button
@@ -248,7 +248,7 @@
 #    Given I navigate to Interview Prep
 #    Then I should see the login page
 #    Then I enter "admin@yahoo.com" in the Email input box
-#    And I enter "adminuser123" in the Password input box
+#    And I enter "adminUserPassword" in the Password input box
 #    And I click "Login" button
 #    Then I validate I am on "Interview prep home" page
 #    And I click "Manage Access" button

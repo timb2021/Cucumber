@@ -4,7 +4,7 @@ Feature: Manage Access
     Given I navigate to Interview Prep
     Then I should see the "Login" page
     Then I enter "admin@yahoo.com" in the "Enter Username" input box
-    Then I enter "adminuser123" in the "Enter Password" input box
+    Then I enter "adminUserPassword" in the "Enter Password" input box
     Then I click "Login" button
     Then I should see the "Home" page
     And I click "Manage Access" link

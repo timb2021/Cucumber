@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         //tags = "@test1 and @test2"    // to run need to exist both of them (tags)
         //tags = "@test3 or @test4 or @test5"
         , stepNotifications = true   // display each steps on the console
-        , tags = "@test"
+      //  , tags = "@test"
         , dryRun = false    // generate step defs
 
 )

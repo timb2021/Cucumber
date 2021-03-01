@@ -135,7 +135,7 @@ public class DashboardImpl {
 
             webElement = WebdriverUtils.getWebDriver().findElement(By.xpath("((//div[@class='anyClass'])[1]//button[@class=\"btn btn-outline-danger ml-1\"])[" + location + "]"));
         } else {
-            location = location + 1;
+           // location = location + 1;
 
             webElement = WebdriverUtils.getWebDriver().findElement(By.xpath("((//div[@class='anyClass'])[2]//button[@class=\"btn btn-outline-danger ml-1\"])[" + location + "]"));
         }

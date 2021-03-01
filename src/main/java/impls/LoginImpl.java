@@ -4,10 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.CommonPage;
 import pages.LoginPage;
-import utils.CucumberLogUtils;
-import utils.LocalConfigUtils;
-import utils.MiscUtils;
-import utils.WebdriverUtils;
+import utils.*;
 
 public class LoginImpl {
 
@@ -47,11 +44,16 @@ public class LoginImpl {
     }
 
     public void enterInInputBox(String value, String inputBoxName) {
+
+        if (value.contains("UserPassword")) {
+
+//            value = LocalConfigUtils.getProperty(value);
+//            value = EncryptionUtils.decrypt(value);
+            value = EncryptionUtils.decrypt(LocalConfigUtils.getProperty(value));
+        }
         String elementXpath = String.format(CommonPage.XPATH_TEMPLATE_INPUT_BOX, inputBoxName);
         WebElement element = WebdriverUtils.getWebDriver().findElement(By.xpath(elementXpath));
-
         element.sendKeys(value);
-
         CucumberLogUtils.logPass(value + " was entered in " + inputBoxName + " input box successfully", true);
     }
 
